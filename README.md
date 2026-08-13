@@ -1,75 +1,84 @@
-# React + TypeScript + Vite
+# 🌱 Tilli — Escola Infantil
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Tilli](https://img.shields.io/badge/Tilli-Escola%20Infantil-f0785e)
+![React](https://img.shields.io/badge/React-19-61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6)
+![Vite](https://img.shields.io/badge/Vite-7-646CFF)
+![Status](https://img.shields.io/badge/Status-Concluído-429d8b)
 
-Currently, two official plugins are available:
+## 📚 Sobre o projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+A **Tilli** é um projeto de site institucional desenvolvido para uma escola infantil particular.
 
-## React Compiler
+O objetivo do projeto é apresentar a proposta pedagógica da escola, suas turmas, atividades e estrutura, além de oferecer uma experiência simples e acolhedora para famílias interessadas em conhecer a instituição.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+O projeto foi desenvolvido como **projeto fictício para estudo e portfólio**, com foco em desenvolvimento Front-End, UI/UX e criação de uma identidade visual própria.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Funcionalidades
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- 🏠 Página inicial com Hero
+- 💛 Seção "Sobre a Tilli"
+- 🌱 Apresentação da metodologia
+- 👧 Seção de turmas
+- 📚 Modal com informações detalhadas das turmas
+- 🎨 Seção de atividades
+- 💬 Modal com detalhes das atividades
+- ⭐ Depoimentos de famílias
+- 🖼️ Galeria de imagens
+- 📍 Seção de contato
+- 📅 Formulário de agendamento de visita
+- 🔗 Botões de "Agende uma visita" com rolagem automática até o formulário
+- 📱 Layout responsivo
+- ✨ Animações e interações
+- 🎨 Identidade visual própria
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🎨 Identidade visual
 
-```
+A identidade visual da Tilli foi criada para transmitir:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- Acolhimento
+- Carinho
+- Segurança
+- Alegria
+- Criatividade
+- Infância
+- Educação
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Paleta principal
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+| Cor | Uso |
+|---|---|
+| `#193B55` | Azul principal |
+| `#F0785E` | Coral / destaque |
+| `#FFFaf6` | Fundo |
+| `#415B70` | Textos |
+| `#429D8B` | Verde |
+| `#EF941D` | Laranja |
 
-```
+---
+
+## 🧩 Estrutura do projeto
+
+```text
+src/
+├── assets/
+│   └── imagens/
+│
+├── sections/
+│   ├── Hero/
+│   ├── About/
+│   ├── Methodology/
+│   ├── Classes/
+│   ├── Activities/
+│   ├── Testimonials/
+│   ├── Gallery/
+│   ├── Contact/
+│   └── Appointment/
+│
+├── App.tsx
+├── main.tsx
+└── index.css
