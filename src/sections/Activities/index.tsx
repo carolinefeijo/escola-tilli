@@ -11,7 +11,7 @@ const activities: ActivityData[] = [
     icon: '🎨',
     title: 'Artes e Criatividade',
     description:
-      'Um espaço para as crianças explorarem cores, formas, texturas e diferentes maneiras de expressar suas ideias.',
+    'Um espaço para as crianças explorarem cores, formas, texturas e diferentes maneiras de expressar suas ideias.',
     benefits: [
       'Criatividade',
       'Coordenação motora',
