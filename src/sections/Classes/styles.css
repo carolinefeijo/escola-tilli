@@ -1,0 +1,728 @@
+.classes {
+  position: relative;
+  overflow: hidden;
+  padding: 110px 8%;
+  background: #ffffff;
+}
+
+.classes__container {
+  position: relative;
+  z-index: 2;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.classes__header {
+  max-width: 850px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.classes__tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 10px 22px;
+
+  border-radius: 30px;
+
+  background: #193b55;
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.classes__tag::before {
+  content: '♡';
+  color: #f0785e;
+  font-size: 18px;
+}
+
+.classes__header h2 {
+  margin: 25px 0 20px;
+
+  color: #193b55;
+
+  font-size: clamp(42px, 5vw, 64px);
+  line-height: 1.05;
+  font-weight: 800;
+}
+
+.classes__header h2 span {
+  color: #f0785e;
+}
+
+.classes__header p {
+  max-width: 760px;
+
+  margin: 0 auto;
+
+  color: #415b70;
+
+  font-size: 19px;
+  line-height: 1.7;
+}
+
+/* =========================
+   GRID
+========================= */
+
+.classes__grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 22px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.class-card {
+  position: relative;
+
+  min-height: 530px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 30px 25px 25px;
+
+  overflow: hidden;
+
+  border-radius: 24px;
+
+  background: #ffffff;
+
+  border: 1px solid #edf0f1;
+
+  box-shadow: 0 12px 35px rgba(31, 61, 82, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.class-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 20px 45px rgba(31, 61, 82, 0.14);
+}
+
+/* Barrinha colorida inferior */
+
+.class-card::after {
+  content: '';
+
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 7px;
+}
+
+/* =========================
+   TOPO
+========================= */
+
+.class-card__top {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+}
+
+.class-card__icon {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 75px;
+  height: 75px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  font-size: 38px;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.class-card:hover .class-card__icon {
+  transform: scale(1.06) rotate(-4deg);
+}
+
+.class-card__age {
+  padding: 8px 12px;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+/* =========================
+   TÍTULO
+========================= */
+
+.class-card h3 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+
+  color: #193b55;
+
+  font-size: 28px;
+  line-height: 1.2;
+
+  font-weight: 800;
+}
+
+.class-card__line {
+  width: 55px;
+  height: 4px;
+
+  margin-bottom: 22px;
+
+  border-radius: 10px;
+}
+
+/* =========================
+   DESCRIÇÃO
+========================= */
+
+.class-card__description {
+  color: #415b70;
+
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+/* =========================
+   ATIVIDADES
+========================= */
+
+.class-card__activities {
+  margin-top: 25px;
+}
+
+.class-card__activities strong {
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: #193b55;
+
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.class-card__activities ul {
+  display: flex;
+  flex-direction: column;
+
+  gap: 9px;
+
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.class-card__activities li {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  color: #526b7d;
+
+  font-size: 14px;
+}
+
+.class-card__activities li span {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 20px;
+  height: 20px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  color: #ffffff !important;
+
+  font-size: 11px;
+  font-weight: 800;
+}
+
+/* =========================
+   BOTÃO
+========================= */
+
+.class-card__button {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: auto;
+  padding: 22px 0 0;
+
+  border: 0;
+  border-top: 1px solid #edf0f1;
+
+  background: transparent;
+
+  color: #193b55;
+
+  font-family: inherit;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition: color 0.25s ease;
+}
+
+.class-card__button span {
+  font-size: 20px;
+
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+.class-card__button:hover span {
+  transform: translateX(6px);
+}
+
+/* Remove o contorno padrão ao clicar */
+
+.class-card__button:focus {
+  outline: none;
+}
+
+.class-card__button:focus-visible {
+  outline: 3px solid rgba(240, 120, 94, 0.3);
+  outline-offset: 4px;
+  border-radius: 6px;
+}
+
+/* =========================
+   CORAL — BERÇÁRIO
+========================= */
+
+.class-card--coral .class-card__icon {
+  background: #ffe1d9;
+}
+
+.class-card--coral .class-card__age {
+  background: #ffe1d9;
+  color: #d95f48;
+}
+
+.class-card--coral .class-card__line {
+  background: #ef745b;
+}
+
+.class-card--coral .class-card__activities li span {
+  background: #ef745b;
+}
+
+.class-card--coral::after {
+  background: #ef745b;
+}
+
+.class-card--coral .class-card__button:hover {
+  color: #ef745b;
+}
+
+.class-card--coral .class-card__button:hover span {
+  color: #ef745b;
+}
+
+/* =========================
+   VERDE — MATERNAL
+========================= */
+
+.class-card--green .class-card__icon {
+  background: #dcefe9;
+}
+
+.class-card--green .class-card__age {
+  background: #dcefe9;
+  color: #358a79;
+}
+
+.class-card--green .class-card__line {
+  background: #429d8b;
+}
+
+.class-card--green .class-card__activities li span {
+  background: #429d8b;
+}
+
+.class-card--green::after {
+  background: #429d8b;
+}
+
+.class-card--green .class-card__button:hover {
+  color: #429d8b;
+}
+
+.class-card--green .class-card__button:hover span {
+  color: #429d8b;
+}
+
+/* =========================
+   LARANJA — PRÉ I
+========================= */
+
+.class-card--orange .class-card__icon {
+  background: #ffedcf;
+}
+
+.class-card--orange .class-card__age {
+  background: #ffedcf;
+  color: #d77d0d;
+}
+
+.class-card--orange .class-card__line {
+  background: #ef941d;
+}
+
+.class-card--orange .class-card__activities li span {
+  background: #ef941d;
+}
+
+.class-card--orange::after {
+  background: #ef941d;
+}
+
+.class-card--orange .class-card__button:hover {
+  color: #ef941d;
+}
+
+.class-card--orange .class-card__button:hover span {
+  color: #ef941d;
+}
+
+/* =========================
+   AZUL — PRÉ II
+========================= */
+
+.class-card--blue .class-card__icon {
+  background: #dfebf9;
+}
+
+.class-card--blue .class-card__age {
+  background: #dfebf9;
+  color: #3e7fc4;
+}
+
+.class-card--blue .class-card__line {
+  background: #4c8bd1;
+}
+
+.class-card--blue .class-card__activities li span {
+  background: #4c8bd1;
+}
+
+.class-card--blue::after {
+  background: #4c8bd1;
+}
+
+.class-card--blue .class-card__button:hover {
+  color: #4c8bd1;
+}
+
+.class-card--blue .class-card__button:hover span {
+  color: #4c8bd1;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.classes__footer {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  margin-top: 45px;
+  padding: 25px 35px;
+
+  border-radius: 22px;
+
+  background: #fff1eb;
+}
+
+.classes__footer > div {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+}
+
+.classes__footer > div > span {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 50px;
+  height: 50px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #ffe0d6;
+
+  color: #ef745b;
+
+  font-size: 25px;
+}
+
+.classes__footer p {
+  color: #415b70;
+
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.classes__footer a {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 15px 25px;
+
+  border-radius: 30px;
+
+  background: #f0785e;
+
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  white-space: nowrap;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.classes__footer a:hover {
+  background: #df664e;
+
+  transform: translateY(-2px);
+}
+
+.classes__footer a span {
+  font-size: 20px;
+
+  transition: transform 0.3s ease;
+}
+
+.classes__footer a:hover span {
+  transform: translateX(4px);
+}
+
+/* =========================
+   DECORAÇÕES
+========================= */
+
+.classes::before {
+  content: '';
+
+  position: absolute;
+
+  width: 220px;
+  height: 220px;
+
+  top: -110px;
+  right: -80px;
+
+  border-radius: 50%;
+
+  background: #e4f1ec;
+
+  opacity: 0.7;
+}
+
+.classes::after {
+  content: '✦';
+
+  position: absolute;
+
+  bottom: 80px;
+  left: 5%;
+
+  color: #ef941d;
+
+  font-size: 55px;
+
+  opacity: 0.25;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1150px) {
+  .classes__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =========================
+   TABLET PEQUENO
+========================= */
+
+@media (max-width: 800px) {
+  .classes {
+    padding: 90px 30px;
+  }
+
+  .classes__header {
+    margin-bottom: 45px;
+  }
+
+  .classes__header p {
+    font-size: 17px;
+  }
+
+  .class-card {
+    min-height: 500px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+  .classes {
+    padding: 80px 20px;
+  }
+
+  .classes__header {
+    margin-bottom: 40px;
+  }
+
+  .classes__header h2 {
+    font-size: 42px;
+  }
+
+  .classes__header p {
+    font-size: 17px;
+  }
+
+  .classes__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .class-card {
+    min-height: auto;
+
+    padding: 28px 23px 23px;
+  }
+
+  .class-card__icon {
+    width: 70px;
+    height: 70px;
+
+    font-size: 36px;
+  }
+
+  .class-card h3 {
+    font-size: 27px;
+  }
+
+  .class-card__description {
+    font-size: 15px;
+  }
+
+  .class-card__button {
+    margin-top: 30px;
+  }
+
+  .classes__footer {
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 20px;
+
+    padding: 25px;
+  }
+
+  .classes__footer a {
+    justify-content: center;
+  }
+}
+
+/* =========================
+   MOBILE PEQUENO
+========================= */
+
+@media (max-width: 400px) {
+  .classes {
+    padding: 65px 16px;
+  }
+
+  .classes__header h2 {
+    font-size: 36px;
+  }
+
+  .classes__tag {
+    padding: 9px 17px;
+
+    font-size: 12px;
+  }
+
+  .class-card__top {
+    align-items: flex-start;
+  }
+
+  .class-card__age {
+    padding: 7px 10px;
+
+    font-size: 11px;
+  }
+}

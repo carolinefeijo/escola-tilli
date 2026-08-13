@@ -1,0 +1,518 @@
+.contact {
+  position: relative;
+  overflow: hidden;
+
+  padding: 110px 8%;
+
+  background: #fffaf6;
+}
+
+.contact__container {
+  position: relative;
+  z-index: 2;
+
+  max-width: 1400px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 1.1fr 0.9fr;
+
+  align-items: center;
+
+  gap: 80px;
+}
+
+/* =========================
+   CONTEÚDO
+========================= */
+
+.contact__content {
+  max-width: 680px;
+}
+
+.contact__tag {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 10px 22px;
+
+  border-radius: 30px;
+
+  background: #193b55;
+
+  color: #ffffff;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.5px;
+}
+
+.contact__tag::before {
+  content: '♡';
+
+  color: #f0785e;
+
+  font-size: 18px;
+}
+
+.contact__content h2 {
+  margin: 25px 0 20px;
+
+  color: #193b55;
+
+  font-size: clamp(42px, 5vw, 64px);
+
+  line-height: 1.05;
+
+  font-weight: 800;
+}
+
+.contact__content h2 span {
+  color: #f0785e;
+}
+
+.contact__description {
+  max-width: 620px;
+
+  margin-bottom: 40px;
+
+  color: #415b70;
+
+  font-size: 18px;
+
+  line-height: 1.75;
+}
+
+/* =========================
+   INFORMAÇÕES
+========================= */
+
+.contact__info {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 15px;
+
+  margin-bottom: 35px;
+}
+
+.contact__item {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  min-height: 85px;
+
+  padding: 16px;
+
+  border: 1px solid #edf0f1;
+
+  border-radius: 18px;
+
+  background: #ffffff;
+
+  color: inherit;
+
+  box-shadow:
+    0 8px 25px rgba(31, 61, 82, 0.05);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.contact__item:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 14px 30px rgba(31, 61, 82, 0.1);
+}
+
+.contact__item-icon {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 50px;
+  height: 50px;
+
+  flex-shrink: 0;
+
+  border-radius: 15px;
+
+  background: #ffe1d9;
+
+  font-size: 23px;
+}
+
+.contact__item:nth-child(2) .contact__item-icon {
+  background: #dcefe9;
+}
+
+.contact__item:nth-child(3) .contact__item-icon {
+  background: #ffedcf;
+}
+
+.contact__item:nth-child(4) .contact__item-icon {
+  background: #dfebf9;
+}
+
+.contact__item div {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 4px;
+
+  min-width: 0;
+}
+
+.contact__item strong {
+  color: #193b55;
+
+  font-size: 14px;
+
+  font-weight: 800;
+}
+
+.contact__item div span {
+  color: #627789;
+
+  font-size: 13px;
+
+  line-height: 1.4;
+}
+
+/* =========================
+   BOTÃO
+========================= */
+
+.contact__button {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 15px;
+
+  padding: 17px 28px;
+
+  border-radius: 30px;
+
+  background: #f0785e;
+
+  color: #ffffff;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  box-shadow:
+    0 10px 25px rgba(240, 120, 94, 0.2);
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.contact__button:hover {
+  background: #df664e;
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 15px 30px rgba(240, 120, 94, 0.3);
+}
+
+.contact__button span {
+  font-size: 21px;
+
+  transition:
+    transform 0.3s ease;
+}
+
+.contact__button:hover span {
+  transform: translateX(5px);
+}
+
+/* =========================
+   VISUAL
+========================= */
+
+.contact__visual {
+  position: relative;
+
+  min-height: 520px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.contact__visual-circle {
+  width: 370px;
+  height: 370px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #dcefe9;
+
+  font-size: 125px;
+
+  box-shadow:
+    0 25px 60px rgba(31, 61, 82, 0.1);
+}
+
+/* =========================
+   CARD SOBRE O VISUAL
+========================= */
+
+.contact__visual-card {
+  position: absolute;
+
+  right: 0;
+
+  bottom: 55px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  max-width: 300px;
+
+  padding: 20px;
+
+  border-radius: 20px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 15px 40px rgba(31, 61, 82, 0.13);
+}
+
+.contact__visual-card > span {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 48px;
+  height: 48px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #ffe1d9;
+
+  font-size: 22px;
+}
+
+.contact__visual-card strong {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: #193b55;
+
+  font-size: 14px;
+
+  line-height: 1.4;
+}
+
+.contact__visual-card p {
+  color: #627789;
+
+  font-size: 12px;
+
+  line-height: 1.5;
+}
+
+/* =========================
+   ESTRELAS
+========================= */
+
+.contact__star {
+  position: absolute;
+
+  color: #ef941d;
+
+  font-size: 45px;
+
+  opacity: 0.7;
+}
+
+.contact__star--one {
+  top: 50px;
+
+  left: 30px;
+}
+
+.contact__star--two {
+  right: 35px;
+
+  top: 100px;
+
+  color: #ef745b;
+
+  font-size: 30px;
+}
+
+/* =========================
+   DECORAÇÃO
+========================= */
+
+.contact::before {
+  content: '';
+
+  position: absolute;
+
+  width: 250px;
+  height: 250px;
+
+  left: -120px;
+  bottom: -120px;
+
+  border-radius: 50%;
+
+  background: #ffe5dc;
+
+  opacity: 0.7;
+}
+
+.contact::after {
+  content: '✦';
+
+  position: absolute;
+
+  right: 5%;
+  bottom: 60px;
+
+  color: #429d8b;
+
+  font-size: 60px;
+
+  opacity: 0.25;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+  .contact__container {
+    grid-template-columns: 1fr;
+
+    gap: 60px;
+  }
+
+  .contact__content {
+    max-width: 850px;
+  }
+
+  .contact__visual {
+    min-height: 430px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+  .contact {
+    padding: 80px 20px;
+  }
+
+  .contact__content h2 {
+    font-size: 42px;
+  }
+
+  .contact__description {
+    font-size: 16px;
+  }
+
+  .contact__info {
+    grid-template-columns: 1fr;
+  }
+
+  .contact__visual {
+    min-height: 360px;
+  }
+
+  .contact__visual-circle {
+    width: 270px;
+    height: 270px;
+
+    font-size: 90px;
+  }
+
+  .contact__visual-card {
+    right: 0;
+    bottom: 20px;
+
+    max-width: 270px;
+  }
+
+  .contact__star--one {
+    left: 10px;
+    top: 30px;
+  }
+
+  .contact__star--two {
+    right: 5px;
+    top: 50px;
+  }
+
+  .contact__button {
+    width: 100%;
+  }
+}
+
+/* =========================
+   MOBILE PEQUENO
+========================= */
+
+@media (max-width: 400px) {
+  .contact {
+    padding: 65px 16px;
+  }
+
+  .contact__content h2 {
+    font-size: 36px;
+  }
+
+  .contact__visual-circle {
+    width: 230px;
+    height: 230px;
+
+    font-size: 75px;
+  }
+
+  .contact__visual-card {
+    max-width: 245px;
+
+    padding: 15px;
+  }
+}

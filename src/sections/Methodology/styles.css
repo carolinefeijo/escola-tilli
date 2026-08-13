@@ -1,0 +1,322 @@
+.methodology {
+  position: relative;
+  overflow: hidden;
+  padding: 110px 8%;
+  background: #fffaf6;
+}
+
+.methodology__container {
+  position: relative;
+  z-index: 2;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+.methodology__header {
+  max-width: 950px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.methodology__tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 22px;
+  border-radius: 30px;
+  background: #f47d62;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.methodology__tag span {
+  font-size: 20px;
+}
+
+.methodology__header h2 {
+  margin: 25px 0 20px;
+  color: #193b55;
+  font-size: clamp(42px, 5vw, 68px);
+  line-height: 1.05;
+  font-weight: 800;
+}
+
+.methodology__header h2 span {
+  color: #f0785e;
+}
+
+.methodology__header p {
+  max-width: 850px;
+  margin: 0 auto;
+  color: #415b70;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* CARDS */
+
+.methodology__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.methodology__card {
+  position: relative;
+  min-height: 480px;
+  padding: 38px 28px;
+  overflow: hidden;
+  border-radius: 22px;
+  background: #ffffff;
+  box-shadow: 0 12px 35px rgba(31, 61, 82, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.methodology__card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(31, 61, 82, 0.14);
+}
+
+.methodology__icon {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 64px;
+}
+
+.methodology__card h3 {
+  margin-bottom: 18px;
+  font-size: 29px;
+  font-weight: 800;
+}
+
+.methodology__line {
+  width: 60px;
+  height: 4px;
+  margin: 0 auto 28px;
+  border-radius: 10px;
+}
+
+.methodology__card p {
+  color: #263f55;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* CORAL */
+
+.methodology__card--coral .methodology__icon {
+  background: #ffe1d9;
+}
+
+.methodology__card--coral h3 {
+  color: #ef745b;
+}
+
+.methodology__card--coral .methodology__line {
+  background: #ef745b;
+}
+
+/* GREEN */
+
+.methodology__card--green .methodology__icon {
+  background: #dcefe9;
+}
+
+.methodology__card--green h3 {
+  color: #429d8b;
+}
+
+.methodology__card--green .methodology__line {
+  background: #429d8b;
+}
+
+/* ORANGE */
+
+.methodology__card--orange .methodology__icon {
+  background: #ffedcf;
+}
+
+.methodology__card--orange h3 {
+  color: #ef941d;
+}
+
+.methodology__card--orange .methodology__line {
+  background: #ef941d;
+}
+
+/* BLUE */
+
+.methodology__card--blue .methodology__icon {
+  background: #dfebf9;
+}
+
+.methodology__card--blue h3 {
+  color: #4c8bd1;
+}
+
+.methodology__card--blue .methodology__line {
+  background: #4c8bd1;
+}
+
+/* CTA */
+
+.methodology__cta {
+  min-height: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 45px;
+  padding: 25px 45px;
+  border-radius: 25px;
+  background: #e8f3ed;
+}
+
+.methodology__cta p {
+  max-width: 600px;
+  color: #26776c;
+  font-size: 19px;
+  line-height: 1.5;
+}
+
+.methodology__cta p strong {
+  font-weight: 800;
+}
+
+.methodology__cta a {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 17px 28px;
+  border-radius: 35px;
+  background: #429d8b;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  white-space: nowrap;
+  transition: 0.3s ease;
+}
+
+.methodology__cta a:hover {
+  transform: translateY(-3px);
+  background: #348879;
+}
+
+.methodology__cta a span {
+  font-size: 20px;
+}
+
+.methodology__cta-decoration {
+  color: #5cb5a2;
+  font-size: 55px;
+}
+
+.methodology__hearts {
+  display: flex;
+  gap: 8px;
+  font-size: 30px;
+}
+
+.methodology__hearts span:nth-child(1) {
+  color: #ef745b;
+}
+
+.methodology__hearts span:nth-child(2) {
+  color: #ef941d;
+}
+
+.methodology__hearts span:nth-child(3) {
+  color: #61b9e5;
+}
+
+/* DECORAÇÕES */
+
+.methodology__decor {
+  position: absolute;
+  pointer-events: none;
+}
+
+.methodology__decor--left {
+  width: 280px;
+  height: 180px;
+  top: -80px;
+  left: -80px;
+  border-radius: 50%;
+  background: #ffe8df;
+  opacity: 0.65;
+}
+
+.methodology__decor--right {
+  width: 180px;
+  height: 180px;
+  right: -90px;
+  bottom: 80px;
+  border-radius: 50%;
+  background: #e4f1ec;
+  opacity: 0.7;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 1100px) {
+  .methodology__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .methodology__card {
+    min-height: 420px;
+  }
+}
+
+@media (max-width: 700px) {
+  .methodology {
+    padding: 80px 20px;
+  }
+
+  .methodology__header {
+    margin-bottom: 40px;
+  }
+
+  .methodology__header p {
+    font-size: 17px;
+  }
+
+  .methodology__cards {
+    grid-template-columns: 1fr;
+  }
+
+  .methodology__card {
+    min-height: auto;
+  }
+
+  .methodology__icon {
+    width: 120px;
+    height: 120px;
+    font-size: 50px;
+  }
+
+  .methodology__cta {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+  }
+
+  .methodology__cta a {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .methodology__hearts {
+    align-self: flex-end;
+  }
+}
